@@ -5,7 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <properties>
-    <version.brms>6.4.0.Beta1</version.brms>
+    <version.brms>6.4.0.Final-redhat-3</version.brms>
   </properties>
   <name>Netty Kie Server Ext</name>
   <dependencyManagement>

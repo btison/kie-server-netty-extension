@@ -1,13 +1,13 @@
 package org.kie.server.ext.netty.marshaller;
 
-import java.io.IOException;
-
 import org.infinispan.protostream.ProtobufUtil;
 import org.infinispan.protostream.SerializationContext;
 import org.infinispan.protostream.config.Configuration;
 import org.kie.server.api.marshalling.Marshaller;
 import org.kie.server.api.marshalling.MarshallingException;
 import org.kie.server.api.marshalling.MarshallingFormat;
+
+import java.io.IOException;
 
 public class ProtoStreamMarshaller implements Marshaller {
     
@@ -53,6 +53,16 @@ public class ProtoStreamMarshaller implements Marshaller {
 
     @Override
     public MarshallingFormat getFormat() {
+        return null;
+    }
+
+    @Override
+    public void setClassLoader(ClassLoader classloader) {
+        //no-op
+    }
+
+    @Override
+    public ClassLoader getClassLoader() {
         return null;
     }
 

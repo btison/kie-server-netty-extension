@@ -16,4 +16,5 @@
       <artifactId>protostream</artifactId>
     </dependency>
   </dependencies>
+  <name>Netty Kie Server Ext :: ProtoStream Marshaller</name>
 </project>
