@@ -112,6 +112,7 @@ public class Codec {
     public void encodeList(List<?> list, ByteBuf byteBuf) {
         if (list == null) {
             byteBuf.writeInt(-1);
+            return;
         }
         byteBuf.writeInt(list.size());
         for (Object o : list) {
